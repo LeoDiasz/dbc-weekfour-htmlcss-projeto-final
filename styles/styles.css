@@ -12,9 +12,9 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.menu  {
-  display: grid;
-  grid-template-columns: 484px 367px 330px;
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 /* HEADER */
@@ -23,6 +23,7 @@ header {
   display: flex;
   padding: 20px 50px;
   justify-content: space-between;
+  height: 6vh;
 }
 
 header nav ul {
@@ -32,6 +33,10 @@ header nav ul {
   
 }
 
+.menu  {
+  display: grid;
+  grid-template-columns: 484px 367px 330px;
+}
 
 header nav ul li {
   display: flex;
@@ -65,4 +70,26 @@ header .menu >div {
 .menu div input{
   border:none;
 }
+
+/* CONTENT MAIN */
+
+.content-main {
+  background-color: #F7F9FB;
+}
+
+.content-main .container { 
+  display: grid;
+  grid-template-columns: 1fr 400px;
+
+  padding: 60px 0px;
+  gap: 40px;
+  height: 100vh;
+}
+
+.content-main aside, .content-main main {
+  background-color: #fff;
+}
+
+/* SECTION PROFILE */
+
 
