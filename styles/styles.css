@@ -53,6 +53,11 @@ header .menu >div {
   margin-right: 10px;
   
 }
+.menu div:nth-child(4) img {
+  width: 500px;
+  margin-right: 10px;
+  
+}
 .menu > div {
   align-items: center;
   display: flex;
@@ -60,3 +65,4 @@ header .menu >div {
 .menu div input{
   border:none;
 }
+
