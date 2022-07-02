@@ -53,7 +53,7 @@ header .menu >div {
 
 }
 
-.menu div:nth-child(2) img {
+.menu > div:nth-child(2) > img {
   width: 18px;
   margin-right: 10px;
   
@@ -91,5 +91,40 @@ header .menu >div {
 }
 
 /* SECTION PROFILE */
+
+.about h1 {
+  font-size: 18px;
+}
+
+ .about {
+  font-size: 14px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.blue-text {
+  color:#0275B1;
+}
+
+.menu .user > img {
+  width:17px;
+  
+}
+
+.projects > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
 
 
