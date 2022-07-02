@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./styles/styles.css">
-  <title>Projeto Linkedin</title>
+  <title>Projeto Linkedin Redesign</title>
 </head>
-
 <body>
   <header>
     <div>
@@ -42,18 +40,20 @@
           </li>
         </ul>
       </nav>
-
+      
       <div>
         <img src="./assets/search.png" alt="search">
         <input type="text" placeholder="Search">
       </div>
-
+    
       <div>
         <img src="./assets/user-perfil.png" alt="search">
-
-        <div>
-          <p>D. Kargaev <span>YOU</span> </p>
+        
+        <div class="user">
+          <p>D. Kargaev <span>YOU</span></p>
           <small>367 views today</small>
+          <img src="./assets/icoN32.png" alt="search">
+          <img src="./assets/iconPerfil.png" alt="search">
         </div>
       </div>
     </div>
@@ -67,103 +67,293 @@
     <div class="container">
       <main>
         <section class="profile">
-
+          <div>
+            <img src="assets/banner.png" alt="banner perfil">
+            <div class="tools">
+              <button>
+                <img src="assets/upload.png" alt="upload">
+              </button>
+              <div>
+                <button>
+                  <img src="assets/edit-profile.png" alt="edit profile">
+                  <span>EDIT PROFILE</span>
+                </button>
+                <button>
+                  <img src="assets/more-horizontal.png" alt="more">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="assets/profile-user.png" alt="perfil user">
+            </div>
+            <div>
+              <div>
+                <div>
+                  <h1>Dmitry Kargaev</h1>
+                  <img src="assets/linkedin-premium.png" alt="linkedin premium">
+                </div>
+                <div>
+                  <img src="assets/navigation.png" alt="navegação">
+                  <small>Saint Petersburg, Russian Federation</small>
+                </div>
+              </div>
+              <p>Freelance UX/UI designer, 80+ projects in web design, mobile apps  (iOS & android) and creative projects. Open to offers.</p>
+              <div>
+                <button>CONTACT INFO</button>
+                <button>1,043 CONNECTIONS</button>
+              </div>
+            </div>
+           </div> 
         </section>
         <section class="about">
-
+          <div>
+            <div>
+              <button>
+                <span>PROFILE</span>
+              </button>
+              <button>
+                <span>ACTIVITY & INTERESTS</span>
+              </button>
+              <button>
+                <span>ARTICLES (3)</span>
+              </button>
+            </div>
+          </div>
+          <div>
+            <h1>About</h1>
+            <p>I'm more experienced in eCommerce web projects and mobile banking apps, but also like to work with creative projects, such as landing pages or unusual corporate websites. </p>
+            <span class="blue-text">SEE MORE</span>
+          </div>
         </section>
         <section class="projects">
-
+          <div>
+            <h1>Projects</h1>
+            <span>3 of 12</span>
+          </div>
+          <div class="projects-grid">
+            <div>
+              <img width="250" src="./assets/zaraRedesignConcept.png" alt="imagem galeria projetos">
+              <h4>Zara redesign concept</h4>
+              <small>UX/UI design, 15.07.2019</small>
+            </div>
+            <div>
+              <img width="250" src="./assets/DrozdBrand.png" alt="imagem galeria projetos">
+              <h4>Drozd. Brand identity. 2016</h4>
+              <small>Graphic design, 03.04.2016</small>
+            </div>
+            <div>
+              <img width="250" src="./assets/Scthon.png" alt="imagem galeria projetos">
+              <h4>SCTHON event brand identity</h4>
+              <small>Graphic design, 03.31.2019</small>
+            </div>
+          </div>
+          <span class="blue-text">SHOW ALL(12)</span>
         </section>
         <section class="skills">
-
+          <h1>Skills & Endoresments</h1>
+          <div>
+            <div>
+              <div>
+                <h3>User experience (UX)</h3>
+                <span class="blue-text">6</span>
+              </div>
+              <img src="assets/skills-users-one.png" alt="usuários">
+            </div>
+            <div>
+              <div>
+                <h3>User Interface (UI)</h3>
+                <span class="blue-text">7</span>
+              </div>
+              <img src="assets/skills-users-two.png" alt="usuários">
+            </div>
+            <div>
+              <div>
+                <h3>Brand Identify</h3>
+                <span class="blue-text">5</span>
+              </div>
+              <img src="assets/skills-users-three.png" alt="usuários">
+            </div>
+          </div>
+          <span class="blue-text">SHOW ALL (17)</span>
         </section>
         <section class="experience">
 
-        </section>
+        </section> 
         <section class="education">
 
         </section>
       </main>
       <aside>
         <section class="dashboard">
-
+          <div>
+            <h1>YOUR DASHBOARD</h1>
+            <span class="blue-text">GO TO STATS</span>
+          </div>
+          <div>
+            <div>
+              <h2 class="blue-text">367</h2>
+              <p>views today</p>
+            </div>
+            <div>
+              <h2 class="blue-text">15</h2>
+              <p>posts views</p>
+            </div>
+            <div>
+              <h2 class="blue-text">9</h2>
+              <p>search appereances</p>
+            </div>
+          </div>  
         </section>
         <section class="visitors">
-
+          <div>
+            <h1>VISITORS</h1>
+            <span class="blue-text">VIEW ALL</span>
+          </div>
+          <div>
+            <div>
+              <img src="assets/visitors-one.png" alt="usuário">
+              <div>
+                <h3>Darlene Black</h3>
+                <small>HR-manager, 10 000 connec...</small>
+              </div>
+            </div>
+            <div>
+              <img src="assets/visitors-two.png" alt="usuário">
+              <div>
+                <h3>Theresa Steward</h3>
+                <small>iOS developer</small>
+              </div>
+            </div>
+            <div>
+              <img src="assets/visitors-three.png" alt="usuário">
+              <div>
+                <h3>Brandon Wilson</h3>
+                <small>Senior UX designer</small>
+              </div>
+            </div>
+            <div>
+              <img src="assets/visitors-four.png" alt="usuário">
+              <div>
+                <h3>Kyle Fisher</h3>
+                <small>Product designer at Com...</small>
+              </div>
+            </div>
+            <div>
+              <img src="assets/visitors.five.png" alt="usuário">
+              <div>
+                <h3>Audrey Alexander</h3>
+                <small>Team lead at Google</small>
+              </div>
+            </div>
         </section>
-        <section class="courses ">
-
+        <section class="courses">
+          <h1>YOU MAY LIKE THESE COURSES</h1>
+          <div>
+            <div>
+              <div>
+                <img src="assets/courses-image-one.png" alt="">
+                <img src="assets/play-video.png" alt="">
+              </div>
+              <div>
+                <h3>UX Foundations: Prototyping</h3>
+                <small>27,959 viewers</small>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="assets/courses-image-two.png" alt="">
+                <img src="assets/play-video.png" alt="">
+              </div>
+              <div>
+                <h3>Designing with Adobe XD and pro</h3>
+                <small>9,122 viewers</small>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="assets/courses-image-three.png" alt="">
+                <img src="assets/play-video.png" alt="">
+              </div>
+              <div>
+                <h3>UX Foundations:
+                  Styles and GUIs</h3>
+                <small>13,858 viewers</small>
+              </div>
+            </div>
+          </div>
+          <span class="blue-text">SEE ALL RECOMENDATIONS</span>
         </section>
       </aside>
     </div>
   </section>
-
   <footer>
-    <div class="container footer-content">
-      <div>
-        <img src="./assets/logo.png" alt="Logo Linkedin">
-        <p>Linked<span>In</span></p>
-      </div>
-      
-      <div>
-      <div class="footer-tittle">
-        <p>Navigation</p>
-      </div>
-
-      <div class="footer-ul">
-
-        <!-- <div> -->
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Advertising</a></li>
-            <li><a href="#">Small Business</a></li>
-          </ul>
-      <!-- </div> -->
-
-      <!-- <div> -->
-        <ul>
-          <li><a href="#">Talent Solutions</a></li>
-          <li><a href="#">Marketing Solutions</a></li>
-          <li><a href="#">Sales Solutions</a></li>
-          <li><a href="#">Safery Center</a></li>
-        </ul>
-      <!-- </div> -->
-
-      <!-- <div> -->
-        <ul>
-          <li><a href="#">Community Guidelines</a></li>
-          <li><a href="#">Privacy & Terms</a></li>
-          <li><a href="#">Mobile App</a></li>
-        </ul>
-      <!-- </div> -->
-    </div>
-  </div>
-
-      <div>
-        <div class="footer-tittle">
-          <p>Fast access</p>
+    <footer>
+      <div class="container footer-content">
+        <div>
+          <img src="./assets/logo.png" alt="Logo Linkedin">
+          <p>Linked<span>In</span></p>
         </div>
-        <button>QUESTIONS?</button>
-        <img src="./assets/help-circle.png">
-        <button>SETTINGS</button>
-        <img src="./assets/settings.png">
-      </div>
-
-      <div>
-        <div class="footer-tittle">
-          <p>Language</p>
+  
+        <div>
+          <div class="footer-tittle">
+            <p>Navigation</p>
+          </div>
+  
+          <div class="footer-ul">
+  
+            <!-- <div> -->
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Advertising</a></li>
+              <li><a href="#">Small Business</a></li>
+            </ul>
+            <!-- </div> -->
+  
+            <!-- <div> -->
+            <ul>
+              <li><a href="#">Talent Solutions</a></li>
+              <li><a href="#">Marketing Solutions</a></li>
+              <li><a href="#">Sales Solutions</a></li>
+              <li><a href="#">Safery Center</a></li>
+            </ul>
+            <!-- </div> -->
+  
+            <!-- <div> -->
+            <ul>
+              <li><a href="#">Community Guidelines</a></li>
+              <li><a href="#">Privacy & Terms</a></li>
+              <li><a href="#">Mobile App</a></li>
+            </ul>
+            <!-- </div> -->
+          </div>
         </div>
-        <select name="question" id="questions">
-          <option value="q1">ENGLISH</option>
-          <option value="q2">PORTUGUÊS</option>
-          <option value="q3">ESPANHOL</option>
-        </select>
-        <img src="./assets/chevron-down.png">
-      </div>
+  
+        <div>
+          <div class="footer-tittle">
+            <p>Fast access</p>
+          </div>
+          <button>QUESTIONS?</button>
+          <img src="./assets/help-circle.png">
+          <button>SETTINGS</button>
+          <img src="./assets/settings.png">
+        </div>
+  
+        <div>
+          <div class="footer-tittle">
+            <p>Language</p>
+          </div>
+          <select name="question" id="questions">
+            <option value="q1">ENGLISH</option>
+            <option value="q2">PORTUGUÊS</option>
+            <option value="q3">ESPANHOL</option>
+          </select>
+          <img src="./assets/chevron-down.png">
+        </div>
+    </footer>
 
   </footer>
 </body>
-
 </html>
