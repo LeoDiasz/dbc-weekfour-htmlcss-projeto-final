@@ -448,3 +448,11 @@ aside > section, aside {
 .courses > div > div h3 {
   word-wrap: normal;
 }
+
+
+/* PAGE FEED */
+
+.feed > section, .feed > div, .list-posts > div, .feed-right > section {
+  background-color: #fff;
+} 
+
