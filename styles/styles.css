@@ -92,6 +92,7 @@ header .menu >div {
 
 .content-main {
   background-color: #F7F9FB;
+  
 }
 
 .content-main .container { 
@@ -258,3 +259,18 @@ header .menu >div {
   align-items: center;
   justify-content: space-between;
 }
+
+
+/* ASIDE */
+
+aside {
+  display: grid;
+  grid-template-rows: 400px 427px 338px;
+  gap: 40px;
+}
+
+.dashboard, .visitors, .courses {
+  background: #fff;
+}
+
+
