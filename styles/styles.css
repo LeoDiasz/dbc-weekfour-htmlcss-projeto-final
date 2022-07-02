@@ -18,7 +18,6 @@ body {
   margin: 0 auto;
 }
 
-
 button {
   cursor: pointer;
   border: none;
@@ -95,7 +94,6 @@ header .menu >div {
 
 .content-main {
   background-color: #F7F9FB;
-  
 }
 
 .content-main .container { 
@@ -104,16 +102,11 @@ header .menu >div {
 
   padding: 60px 0px;
   gap: 40px;
-  height: 100vh;
 }
 .content-main .container main {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.content-main aside, .content-main main {
-  background-color: aliceblue;
 }
 
 /* SECTION PROFILE */
@@ -187,10 +180,10 @@ header .menu >div {
 }
 
 .profile > div:last-child > div:first-child img{
-  width: 170px;
+  width: 200px;
   border-radius: 100%;
   border: 10px solid #fff;
-  bottom: 45px;
+  bottom: 40px;
   position: absolute;
 }
 
@@ -316,16 +309,100 @@ header .menu >div {
 
 aside {
   display: grid;
-  grid-template-rows: 400px 427px 338px;
-  gap: 40px;
+  grid-template-rows: 400px 500px 400px ;
+  gap: 30px;
+}
+
+aside > section, aside {
+  max-width: 100%;
 }
 
 .dashboard, .visitors, .courses {
   background: #fff;
 }
 
+/* SECTION DASHBOARD */
 
+.dashboard, .visitors, .courses {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 45px;
+}
 
+.dashboard > div:first-child, .visitors > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F4F4F4;
+}
 
+.dashboard > div:last-child {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  height: 100%;
+}
 
+.dashboard > div:last-child > div h2 {
+  font-size: 56px;
+}
 
+/* SECTION VISITORS */
+
+.visitors > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.visitors > div:last-child > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.visitors > div:last-child > div img {
+  width: 60px;
+  border-radius: 100%;
+}
+
+/* SECTION COURSES */
+
+.courses > h1 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F4F4F4;
+}
+
+.courses > div {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.courses > div > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.courses > div > div > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.courses > div > div > div:first-child img:first-child {
+  width: 100px
+}
+
+.courses > div > div > div:first-child img:last-child {
+  position: absolute;
+}
+
+.courses > div > div h3 {
+  word-wrap: normal;
+}
