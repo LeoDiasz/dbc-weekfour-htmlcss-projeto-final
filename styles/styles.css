@@ -27,7 +27,6 @@ button {
   width: 170px;
   height: 34px;
   background-color: #fff;
-  
 }
 
 button:hover {
@@ -177,7 +176,7 @@ header > div:nth-child(5){
   display: grid;
   grid-template-columns: 1fr 400px;
 
-  padding: 60px 0px;
+  padding: 40px 0px;
   gap: 40px;
 }
 .content-main .container main {
