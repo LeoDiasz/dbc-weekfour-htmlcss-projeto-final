@@ -37,12 +37,9 @@ button:hover {
 .blue-text {
   color: #0275B1;
   font-weight: bold;
+  cursor: pointer;
 }
 
-.blue-light-text {
-  color: #0275B1;
-  font-weight: bold;
-}
 
 /* HEADER */
 
@@ -179,6 +176,7 @@ header > div:nth-child(5){
   padding: 40px 0px;
   gap: 40px;
 }
+
 .content-main .container main {
   display: flex;
   flex-direction: column;
@@ -188,12 +186,9 @@ header > div:nth-child(5){
 /* SECTION PROFILE */
 
 .profile {
-  height: 400px;
+  display: grid;
+  grid-template-rows: 50% 1fr;
   background-color: #fff;
-}
-
-.profile > div {
-  height: 50%;
 }
 
 .profile > div:first-child {
@@ -210,25 +205,22 @@ header > div:nth-child(5){
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  
   width: 100%;
-  top: 25px;
+  padding: 0 30px;
+
   position: absolute;
+  top: 25px;
 }
 
 .profile .tools div:last-child {
-  margin-right: 40px;
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
-.profile .tools > button {
-  margin-left: 40px;
-} 
-
 .profile .tools > button, .profile .tools > div button:last-child {
-  height: 40px;
-  width: 40px;
+  height: 36px;
+  width: 36px;
 }
 
 .profile .tools > div button:first-child {
@@ -236,8 +228,9 @@ header > div:nth-child(5){
   align-items: center;
   justify-content: center;
   gap: 10px;
+  
   width: 160px;
-  height: 40px;
+  height: 36px;
 }
 
 .profile .tools > div button:last-child img {
@@ -250,24 +243,24 @@ header > div:nth-child(5){
 }
 
 .profile > div:last-child > div:first-child {
-  display: flex;
-  justify-content: center;
+  padding-left: 30px;
   position: relative;
 }
 
 .profile > div:last-child > div:first-child img{
   width: 200px;
+  position: absolute;
+  top: -40px;
+  
   border-radius: 100%;
   border: 10px solid #fff;
-  bottom: 40px;
-  position: absolute;
 }
 
 .profile > div:last-child > div:last-child{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px 40px 20px 0;
+  padding: 25px 30px 30px 0;
 }
 
 .profile > div:last-child > div:last-child > div:first-child {
@@ -288,10 +281,11 @@ header > div:nth-child(5){
 
 .profile > div:last-child > div:last-child button {
   font-weight: bold;
+  padding: 10px 0px;
 }
 
 .profile > div:last-child > div:last-child button:first-child {
-  background-color: #0077B5;
+  background: linear-gradient(0deg, rgba(14,103,149,1) 0%, rgba(0,119,181,1) 100%);
   color: #fff;
   margin-right: 15px;
 }
@@ -317,21 +311,22 @@ header > div:nth-child(5){
 
 .about > div:first-child > div button{
   width: 100%;
-  min-width: 60px;
+  min-width: 190px;
   font-weight: bold;
   border-radius: 0;
 }
 
 .about > div:first-child button:first-child {
-  height: 60px;
-  background-color: #0077B5;
-  color: #fff;
+  height: 50px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+
+  background: linear-gradient(0deg, rgba(14,103,149,1) 0%, rgba(0,119,181,1) 100%);
+  color: #fff;
 }
 
 .about > div:first-child button:not(button:first-child){
-  height: 50px;
+  height: 40px;
   border-top: 1px solid #E7E7E7;
   border-right: 1px solid #E7E7E7;
 }
@@ -340,11 +335,11 @@ header > div:nth-child(5){
   border-top-right-radius: 4px;
 }
 
- .about > div:last-child{
+.about > div:last-child{
   display: flex;
   flex-direction: column;
   gap:20px;
-  padding: 50px 45px 30px 45px;
+  padding: 60px 30px 35px 30px;
 
   text-align: left;
   background: linear-gradient(0deg, rgba(255,255,255,1) 60%, rgba(241,244,248,1) 100%);
@@ -355,11 +350,9 @@ header > div:nth-child(5){
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  padding: 20px 45px;
-  height: 420px;
+  gap: 25px;
+  padding: 30px;
   background-color: #fff;
-
 }
 
 .projects > div:first-child {
@@ -371,7 +364,7 @@ header > div:nth-child(5){
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 20px;
 }
 
 .projects-grid > div img {
