@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -588,8 +588,8 @@ footer {
 
 .footer-content {
   display: grid;
-  grid-template-columns: 1fr 5fr 2fr 2fr;
-  gap: 20px;
+  grid-template-columns: 1fr 5fr 1fr 3fr;
+  gap: 50px;
   padding: 20px;
 }
 
@@ -627,7 +627,6 @@ footer {
   padding-bottom: 15px;
 }
 
-<<<<<<< HEAD
 .footer-buttons button {
   display: flex;
   justify-content: space-between;
@@ -654,7 +653,7 @@ select {
   border: none;
   border-radius: 4px;
   -webkit-appearance:none; 
-  background: #fff url(./assets/chevron-down.png) 95.5% 50% no-repeat;
+  background: #fff url(./assets/chevron-down.png)  no-repeat;
   width: 270px;
   height: 32px;
   display: flex;
@@ -669,7 +668,9 @@ select {
   width: 14px;
   height: 14px;
   margin-left: -20px;
-=======
+}
+
+/* FEED */
 .new-post  {
   display: flex;
   flex-direction: column;
@@ -690,5 +691,4 @@ select {
 .new-post > div:first-child {
   border-bottom: 2px solid #F4F4F4;
   padding-bottom: 30px;
->>>>>>> 37b97f8a5fff7ef1a725a2b8ab384539198341b0
 }
