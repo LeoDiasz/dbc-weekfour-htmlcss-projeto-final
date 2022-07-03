@@ -843,18 +843,16 @@ select {
 .post > div:nth-child(2) > div {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap:5px;
+}
+
+.post > div:nth-child(2){
+  display: flex;
+  gap:15px;
 }
 
 .post > div:nth-child(1) > img {
   width: 100%;
-}
-
-.post > div:nth-child(2) > div {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 20px;
 }
 
 .post > div:last-child {
@@ -890,6 +888,14 @@ select {
   gap: 10px;
   border-left: 1px solid #F4F4F4;
   width: 120px
+}
+
+.post > div:nth-child(3) {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  flex-direction: column;
+  padding: 30px;
 }
 
 /* ASIDE FEED-RIGHT */
