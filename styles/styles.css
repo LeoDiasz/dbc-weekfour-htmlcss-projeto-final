@@ -458,10 +458,49 @@ aside > section, aside {
 
 /* PAGE FEED */
 
-.feed > section, .feed > div, .list-posts > div, .feed-right > section {
+.feed > section, .list-posts > div, .feed-right > section {
   background-color: #fff;
 } 
 
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* SORT TRENDING */
+
+.feed > div, .feed > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.feed > div > div {
+  width: 100%;
+  gap: 30px;
+}
+
+.feed > div > div span {
+  display: flex;
+}
+
+.feed > div > div span::after {
+  content: "";
+  margin-left: 10px;
+  height: 10px;
+  width: 15px;
+  background: url("../assets/chevron-down.png");
+}
+
+
+.feed > div > div::before, .feed > div > div::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #E7E7E7;
+}
 
 /* LISTS POSTS DIV KYLE */
 
@@ -522,7 +561,7 @@ aside > section, aside {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   border-radius: 0;
   gap: 10px;
   height: 100%;
