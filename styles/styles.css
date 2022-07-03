@@ -467,8 +467,7 @@ footer {
 
 .footer-content {
   display: grid;
-  /* grid-template-columns: 1fr 2fr 2fr 2fr 2fr 4fr; */
-  grid-template-columns: 1fr 4fr 2fr 2fr;
+  grid-template-columns: 1fr 5fr 2fr 2fr;
   gap: 20px;
   padding: 20px;
 }
@@ -497,7 +496,7 @@ footer {
 }
 
 .footer-ul {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 600px;
   display: flex;
   justify-content: space-between;
@@ -507,3 +506,45 @@ footer {
   padding-bottom: 15px;
 }
 
+.footer-buttons button {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px;
+  align-items: center;
+}
+
+.footer-buttons button:first-child {
+  background-color: #0275B1;
+  margin-bottom: 10px;
+}
+
+.footer-buttons button:first-child span:nth-child(1) {
+  color: white;
+}
+
+.footer-buttons img {
+  width: 16px;
+}
+
+select {
+  padding: 9px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  -webkit-appearance:none; 
+  background: #fff url(./assets/chevron-down.png) 95.5% 50% no-repeat;
+  width: 270px;
+  height: 32px;
+  display: flex;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+}
+
+.select img {
+  width: 14px;
+  height: 14px;
+  margin-left: -20px;
+}
