@@ -48,59 +48,125 @@ button:hover {
 /* HEADER */
 
 header {
-  display: flex;
-  padding: 20px 50px;
-}
-
-header nav ul {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
   align-items: center;
-  
+  grid-template-columns: 205px 600px 460px 435px 150px;
 }
 
-.menu  {
-  display: grid;
-  grid-template-columns: 484px 367px 330px;
+header > div, header > nav {
+  display: flex;
+  align-items: center;
+
+  border-right: 2px solid #F4F4F4;
+  padding: 20px 40px;
+  height: 100%;
 }
 
-header nav ul li {
+header > div:first-child, header > nav {
+  justify-content: center;
+}
+
+header > nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+header > nav ul li a{
   display: flex;
   flex-direction: column;
-  align-items: center; 
-}
-
-header .menu >div {
-  display: flex;
-  
-}
-.menu nav img {
-  width: 16px;
-
-}
-
-.menu > div:nth-child(2) > img {
-  width: 18px;
-  margin-right: 10px;
-  
-}
-.menu div:nth-child(4) img {
-  width: 500px;
-  margin-right: 10px;
-  
-}
-.menu > div {
+  justify-content: center;
   align-items: center;
+  gap: 10px;
+  
+  font-weight: 500;
+  position: relative;
+  color: #181818;
+}
+
+header nav ul li:nth-child(4) > a img:first-child {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+}
+
+header > div:nth-child(3) {
+  gap: 20px;
+}
+
+header > div:nth-child(3) > div {
   display: flex;
-}
-.menu div input{
-  border:none;
+  align-items: center;
+  width: 60%;
+  position: relative;
 }
 
-.menu .user > img {
-  width:17px;
+header > div:nth-child(3) img {
+  position: absolute;
+  left: 5px;
+}
+
+header > div:nth-child(3) input {
+  width: 100%;
+  border: none;
+  padding: 10px 40px;
+ 
+  color: #181818
+}
+
+header > div:nth-child(3) input::placeholder {
+  font-size: 16px;
+  color: #CECECE;
 
 }
+
+header > div:nth-child(4) {
+  gap: 20px;
+}
+
+header > div:nth-child(4) img {
+  border-radius: 100%;
+  width: 50px;
+  object-fit: cover;
+}
+
+header > div:nth-child(4) p {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+header > div:nth-child(4) p span {
+  margin-left: 10px;
+  color: rgba(24, 24, 24, 20%)
+}
+
+header > div:nth-child(4) small {
+  color: #747474;
+}
+
+header > div:nth-child(4) small span {
+  color: #02B033;
+}
+
+header > div:nth-child(4) small span::after {
+  content: " ";
+  display: inline-block;
+  margin-left: 5px;
+  background: url("../assets/arrowup.png") no-repeat;
+  background-position: 0 8px;
+  background-size: 15px;
+  height: 20px;
+  width: 15px
+}
+
+header > div:nth-child(5){
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+}
+
+
 /* CONTENT MAIN */
 
 .content-main {
