@@ -352,21 +352,21 @@ header .menu >div {
   justify-content: space-between;
 }
 
-/* EXPERIENCE */
+/* SECTION EXPERIENCE */
 
-.experience {
+.experience, .education {
   padding: 30px 45px;
   background-color: #fff;
 }
 
-.experience img {
+.experience img, .education img {
   width: 54px;
 }
-.experience h2 {
+.experience h1, .education h1 {
   margin-bottom: 27px;
 }
 
-.experience-card {
+.experience-card, .education-card {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -375,7 +375,11 @@ header .menu >div {
   font-size: 14px;
 }
 
-.experience-card h3 {
+.experience-card p, .education-card p {
+  font-weight: 400;
+}
+
+.experience-card h3, .education-card h3 {
   padding-bottom: 15px;
 }
 
@@ -392,8 +396,13 @@ header .menu >div {
   padding-left: 15px;
 }
 
-.experience-card div:nth-child(2) > div  {
+.experience-card div:nth-child(2) > div, .education-card div:nth-child(2) > div {
   padding-bottom: 15px;
+}
+
+.education-card div div > span {
+  padding-top: 20px;
+  /* background-color: brown; */
 }
 
 hr {
