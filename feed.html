@@ -11,56 +11,67 @@
 <body>
   <header>
     <div>
-      <img src="./assets/logo.png" alt="logo">
+      <a href="#">
+        <img src="./assets/logo.png" alt="logo">
+      </a>
     </div>
 
-    <div class="menu">
-      <nav>
-        <ul>
-          <li>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">
             <img src="./assets/feed.png" alt="feed">
-            <p>FEED</p>
-          </li>
-          <li>
-            <img src="./assets/user-perfil.png" alt="user">
-            <p>NETWORK</p>
-          </li>
-          <li>
+            <span>FEED</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./assets/users.png" alt="user">
+            <span>NETWORK</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
             <img src="./assets/jobs.png" alt="jobs">
-            <p>JOBS</p>
-          </li>
-          <li>
+            <span>JOBS</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
             <img src="./assets/countChat.png" alt="unreadMsgCount">
             <img src="./assets/chat.png" alt="chat">
-            <p>CHAT</p>
-          </li>
-          <li>
+            <span>CHAT</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
             <img src="./assets/notification.png" alt="notification">
-            <p>NOTICES</p>
-          </li>
-        </ul>
-      </nav>
-      
+            <span>NOTICES</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div>
       <div>
         <img src="./assets/search.png" alt="search">
         <input type="text" placeholder="Search">
       </div>
-    
+     
+    </div>
+  
+    <div>
+      <img src="./assets/user-perfil.png" alt="search">
+      
       <div>
-        <img src="./assets/user-perfil.png" alt="search">
-        
-        <div>
-          <p>D. Kargaev <span>YOU</span> </p>
-          <small>367 views today</small>
-          <img src="./assets/icoN32.png" alt="search">
-          <img src="./assets/iconPerfil.png" alt="search">
-        </div>
+        <p>D. Kargaev <span>YOU</span> </p>
+        <small>367 views today <span>+32</span></small>
       </div>
     </div>
-
+    
     <div>
       <img src="./assets/more-horizontal.png" alt="more">
-      <p>OTHER</p>
+      <span>OTHER</span>
     </div>
   </header>
   <section class="content-main">
@@ -86,6 +97,7 @@
           </div>
          </div>
          <section class="list-posts">
+          <div>
             <div>
               <small><span class="blue-light-text">Ted Bell, Annette Nguyen</span> and <span class="blue-light-text">Cody Hawkins</span> liked this</small>
               <button>
@@ -93,15 +105,14 @@
               </button>
             </div>
             <div>
+              <img src="./assets/posts/photo.png" alt="usuário">
               <div>
-                <img src="./assets/posts/photo.png" alt="usuário">
-                <div>
-                  <h3>Theresa Steward</h3>
-                  <small>iOS developer</small>
-                </div>
+                <h3>Theresa Steward</h3>
+                <small>iOS developer</small>
               </div>
-              <p>What did the Dursleys care if Harry lost his place on the House Quidditch team because he hadn’t practiced all summer? What was it to the Dursleys if Harry went back to school without any of his homework done? The Dursleys were what wizards called Muggles (not a drop of magical blood in their veins).</p>
-              <span class="blue-text">READ MORE</span>
+            </div>
+            <p>What did the Dursleys care if Harry lost his place on the House Quidditch team because he hadn’t practiced all summer? What was it to the Dursleys if Harry went back to school without any of his homework done? The Dursleys were what wizards called Muggles (not a drop of magical blood in their veins).</p>
+            <span class="blue-text">READ MORE</span>
             <div>
               <div>
                 <button>
@@ -118,42 +129,47 @@
                 <span>SHARE</span>
               </button>
             </div>
+          </div>
           
-            <div class="post-image">
-              <div>
-                <small><span class="blue-light-text">Audrey Alexander</span> comment this</small>
-                <button>
-                  <img src="assets/more-horizontal.png" alt="more">
-                </button>
-              </div>
-              <div>
-                <div>
-                  <img src="assets/post-user.png" alt="usuário">
-                  <div>
-                    <h3>Kyle Fisher</h3>
-                    <small>Product designer at Commandor Corp.</small>
-                  </div>
-                </div>
-                <p>How’s your day going, guys?</p>
-                <img src="assets/post-banner.png" alt="imagem post">
-              </div>
-              <div>
-                <div>
-                  <button>
-                    <img src="assets/post-like.png" alt="botão curtir">
-                    <span>12</span>
-                  </button>
-                  <button>  
-                    <img src="assets/post-chat.png" alt="botão chat">
-                    <span>3</span>
-                  </button>
-                </div>
-                <button>
-                  <img src="assets/post-share.png" alt="botão compartilhar">
-                  <span>SHARE</span>
-                </button>
-              </div>
+          <div class="post-image">
+            <div>
+              <small><span class="blue-text">Audrey Alexander</span> comment this</small>
+              <button>
+                <img src="assets/more-horizontal.png" alt="more">
+              </button>
             </div>
+            <div>
+              <div>
+                <img src="assets/post-user.png" alt="usuário">
+                <div>
+                  <h3>Kyle Fisher</h3>
+                  <small>Product designer at Commandor Corp.</small>
+                </div>
+              </div>
+              <p>How’s your day going, guys?</p>
+              <img src="assets/post-banner.png" alt="imagem post">
+            </div>
+            <div>
+              <div>
+                <button>
+                  <img src="assets/post-like.png" alt="botão curtir">
+                  <span>12</span>
+                </button>
+                <button>  
+                  <img src="assets/post-chat.png" alt="botão chat">
+                  <span>3</span>
+                </button>
+              </div>
+              <button>
+                <img src="assets/post-share.png" alt="botão compartilhar">
+                <span>SHARE</span>
+              </button>
+            </div>
+          </div>
+          <div>
+            
+          </div>
+          <div>
 
             <section class="brandon">
               <div>
@@ -189,17 +205,53 @@
 
             <section class="audrey">
 
-            </section>
+          </section>
+          <section class="">
+
+          </section>
          </section>
       </section>
       <aside class="feed-right">
         <section class="user">
-
+          <div>
+            <img src="assets/banner.png" alt="banner perfil">
+          </div>
+          <div>
+            <img src="assets/profile-user.png" alt="perfil user">
+            <div>
+              <h1>Dmitry Kargaev</h1>
+              <img src="assets/linkedin-premium.png" alt="linkedin premium">
+            </div> 
+            <small>Freelance UX/UI designer, 80+ projects in web design, mobile apps  (iOS & android) and creative projects. Open to offers.</small>
+          </div>
         </section>
         <section class="new-article">
-
+          <button>
+            <span>WRITE NEW ARTICLE</span>
+          </button>
         </section>
         <section class="groups">
+          <div>
+            <h1>MY GROUPS</h1>
+            <span class="blue-text">EDIT LIST</span>
+          </div>
+          <div>
+            <div>
+              <img src="assets/groups-one.png" alt="grupos">
+              <h3>Moscow State Linguistical University</h3> 
+            </div>
+            <div>
+              <img src="assets/groups-two.png" alt="grupos">
+              <h3>Digital freelancers group</h3> 
+            </div>
+            <div>
+              <img src="assets/groups-three.png" alt="grupos">
+              <h3>Interaction design association</h3> 
+            </div>
+          </div>
+          <div>
+            <span class="blue-text">SHOW ALL (8)</span>
+          </div>
 
         </section>
         <section class="hashtags">
