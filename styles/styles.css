@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -40,12 +40,16 @@ button:hover {
   font-weight: bold;
 }
 
+.blue-light-text {
+  color: #0275B1;
+  font-weight: bold;
+}
+
 /* HEADER */
 
 header {
   display: flex;
   padding: 20px 50px;
-  height: 9vh;
 }
 
 header nav ul {
@@ -453,16 +457,133 @@ aside > section, aside {
 
 /* PAGE FEED */
 
-.feed > section, .feed > div, .list-posts > div, .feed-right > section {
+.feed > section, .list-posts > div, .feed-right > section {
   background-color: #fff;
 } 
 
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* SORT TRENDING */
+
+.feed > div, .feed > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.feed > div > div {
+  width: 100%;
+  gap: 30px;
+}
+
+.feed > div > div span {
+  display: flex;
+}
+
+.feed > div > div span::after {
+  content: "";
+  margin-left: 10px;
+  height: 10px;
+  width: 15px;
+  background: url("../assets/chevron-down.png");
+}
+
+
+.feed > div > div::before, .feed > div > div::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #E7E7E7;
+}
+
+/* LISTS POSTS DIV KYLE */
+
+.post-image {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-image > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid #F4F4F4;
+}
+
+.post-image > div:first-child button {
+  width: 50px;
+}
+
+.post-image > div:nth-child(2) {
+  padding: 10px 40px;
+}
+
+.post-image > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.post-image > div:nth-child(2) > img {
+  width: 100%;
+}
+
+.post-image > div:nth-child(2) > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.post-image > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #F4F4F4;
+  padding: 0 40px;
+}
+
+.post-image > div:last-child > div {
+  display: flex;
+  height: 100%;
+}
+
+.post-image > div:last-child button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0;
+  gap: 10px;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.post-image > div:last-child > div > button {
+  border-right: 1px solid #F4F4F4;
+  width: 100px;
+}
+
+.post-image > div:last-child > button {
+  gap: 10px;
+  border-left: 1px solid #F4F4F4;
+  width: 120px
+}
 
 /* FOOTER */
+
 footer {
   width: 215px;
   background-color: #E7E7E7;
-  width: 100vw;
+  width: 100%;
 }
 
 .footer-content {
@@ -506,6 +627,7 @@ footer {
   padding-bottom: 15px;
 }
 
+<<<<<<< HEAD
 .footer-buttons button {
   display: flex;
   justify-content: space-between;
@@ -547,4 +669,26 @@ select {
   width: 14px;
   height: 14px;
   margin-left: -20px;
+=======
+.new-post  {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 40px;
+  
+}
+
+
+.new-post > div:last-child {
+  font-size: 18px;
+  color: rgba(24, 24, 24, 0.2);
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.new-post > div:first-child {
+  border-bottom: 2px solid #F4F4F4;
+  padding-bottom: 30px;
+>>>>>>> 37b97f8a5fff7ef1a725a2b8ab384539198341b0
 }
