@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-/* @import url('http://fonts.cdnfonts.com/css/gotham-pro'); */
 
 * {
   margin: 0;
@@ -352,7 +351,7 @@ header .menu >div {
   justify-content: space-between;
 }
 
-/* SECTION EXPERIENCE */
+/* SECTION EXPERIENCE, EDUCATION*/
 
 .experience, .education {
   padding: 30px 45px;
@@ -402,7 +401,6 @@ header .menu >div {
 
 .education-card div div > span {
   padding-top: 20px;
-  /* background-color: brown; */
 }
 
 hr {
@@ -734,8 +732,7 @@ select {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 20px 40px;
-  
+  padding: 20px 40px;  
 }
 
 .new-post > div:last-child {
