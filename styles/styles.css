@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-/* @import url('http://fonts.cdnfonts.com/css/gotham-pro'); */
 
 * {
   margin: 0;
@@ -410,7 +409,7 @@ header > div:nth-child(5){
   justify-content: space-between;
 }
 
-/* SECTION EXPERIENCE */
+/* SECTION EXPERIENCE, EDUCATION*/
 
 .experience, .education {
   padding: 30px 45px;
@@ -460,7 +459,6 @@ header > div:nth-child(5){
 
 .education-card div div > span {
   padding-top: 20px;
-  /* background-color: brown; */
 }
 
 hr {
@@ -815,7 +813,84 @@ select {
 }
 
 
+.list-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+/* LISTS POSTS DIV THERESA */
+
+.post div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid #F4F4F4;
+}
+
+.post > div:first-child button {
+  width: 50px;
+}
+
+.post > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.post > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.post > div:nth-child(1) > img {
+  width: 100%;
+}
+
+.post > div:nth-child(2) > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.post > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #F4F4F4;
+  padding: 0 40px;
+}
+
+
+.post > div:first-child > div {
+  display: flex;
+  height: 100%;
+}
+
+.post > div:first-child button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0;
+  gap: 10px;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.post > div:first-child > div > button {
+  border-right: 1px solid #F4F4F4;
+  width: 100px;
+}
+
+.post > div:first-child > button {
+  gap: 10px;
+  border-left: 1px solid #F4F4F4;
+  width: 120px
+}
 
 /* ASIDE FEED-RIGHT */
 
@@ -823,7 +898,6 @@ select {
   display: grid;
   grid-template-rows: 350px 100px auto ;
 }
-
 
 /* SECTION USER */
 
