@@ -45,7 +45,6 @@ button:hover {
 header {
   display: flex;
   padding: 20px 50px;
-  height: 9vh;
 }
 
 header nav ul {
@@ -516,3 +515,24 @@ footer {
   padding-bottom: 15px;
 }
 
+.new-post  {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 40px;
+  
+}
+
+
+.new-post > div:last-child {
+  font-size: 18px;
+  color: rgba(24, 24, 24, 0.2);
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.new-post > div:first-child {
+  border-bottom: 2px solid #F4F4F4;
+  padding-bottom: 30px;
+}
