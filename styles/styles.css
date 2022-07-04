@@ -39,12 +39,21 @@ button:hover {
   cursor: pointer;
 }
 
+img {
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+img:hover {
+  filter: brightness(0.95);
+}
+
 /* HEADER */
 
 header {
   display: grid;
   align-items: center;
-  grid-template-columns: 205px 600px 460px 435px 150px;
+  grid-template-columns: 11% 2fr 2fr 20% 10%;
 }
 
 header > div, header > nav {
@@ -77,6 +86,12 @@ header > nav ul li a{
   font-weight: 500;
   position: relative;
   color: #181818;
+  transition: 0.2s;
+}
+
+header > nav ul li a:hover {
+  filter: brightness(0.98);
+  color: #0077B5;
 }
 
 header nav ul li:nth-child(4) > a img:first-child {
@@ -104,7 +119,7 @@ header > div:nth-child(3) img {
 header > div:nth-child(3) input {
   width: 100%;
   border: none;
-  padding: 10px 40px;
+  padding: 10px 0 10px 40px;
  
   color: #181818
 }
@@ -123,6 +138,7 @@ header > div:nth-child(4) img {
   border-radius: 100%;
   width: 50px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 header > div:nth-child(4) p {
@@ -241,6 +257,7 @@ header > div:nth-child(5){
 .profile > div:last-child {
   display: grid;
   grid-template-columns: 250px 1fr;
+  padding-bottom: 10px;
 }
 
 .profile > div:last-child > div:first-child {
@@ -280,6 +297,11 @@ header > div:nth-child(5){
   width: 20px;
 }
 
+
+.profile > div:last-child > div:last-child > div:last-child {
+  display: flex;
+  gap: 15;
+}
 .profile > div:last-child > div:last-child button {
   font-weight: bold;
   padding: 10px 0px;
@@ -288,7 +310,6 @@ header > div:nth-child(5){
 .profile > div:last-child > div:last-child button:first-child {
   background: linear-gradient(0deg, rgba(14,103,149,1) 0%, rgba(0,119,181,1) 100%);
   color: #fff;
-  margin-right: 15px;
 }
 
 .profile > div:last-child > div:last-child button:last-child {
@@ -765,12 +786,9 @@ select {
   gap: 20px;
 }
 
-.feed > div > div span {
-  display: flex;
-}
-
 .feed > div > div span::after {
   content: "";
+  display: inline-block;
   margin-left: 10px;
   height: 10px;
   width: 15px;
@@ -912,7 +930,7 @@ select {
 }
 
 .user > div:first-child img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -1010,13 +1028,12 @@ select {
 .hashtags {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 265px;
   gap: 20px;
   padding: 25px 30px;
  
-
 }
+
 .hashtags > div:first-child {
   border-bottom: 1px solid#F4F4F4;
   padding-bottom: 25px;
@@ -1048,7 +1065,7 @@ select {
 
 .trending-articles {
   padding: 25px 30px;
-  
+
 }
 
 .trending-articles > div:first-child {
