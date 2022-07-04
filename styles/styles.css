@@ -310,6 +310,7 @@ header > div:nth-child(5){
 .profile > div:last-child > div:last-child button:first-child {
   background: linear-gradient(0deg, rgba(14,103,149,1) 0%, rgba(0,119,181,1) 100%);
   color: #fff;
+  margin-right: 15px;
 }
 
 .profile > div:last-child > div:last-child button:last-child {
