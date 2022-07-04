@@ -26,6 +26,7 @@ button {
   width: 170px;
   height: 34px;
   background-color: #fff;
+  
 }
 
 button:hover {
@@ -36,9 +37,12 @@ button:hover {
 .blue-text {
   color: #0275B1;
   font-weight: bold;
-  cursor: pointer;
 }
 
+.blue-light-text {
+  color: #0275B1;
+  font-weight: bold;
+}
 
 /* HEADER */
 
@@ -161,7 +165,6 @@ header > div:nth-child(5){
   font-weight: 500;
 }
 
-
 /* CONTENT MAIN */
 
 .content-main {
@@ -172,22 +175,28 @@ header > div:nth-child(5){
   display: grid;
   grid-template-columns: 1fr 400px;
 
-  padding: 40px 0px;
+  padding: 60px 0px;
   gap: 40px;
 }
-
 .content-main .container main {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
+
+.content-main main > section, .content-main aside > section, .feed > section, .list-posts > div {
+  border-radius: 4px;
+}      
 
 /* SECTION PROFILE */
 
 .profile {
-  display: grid;
-  grid-template-rows: 50% 1fr;
+  height: 400px;
   background-color: #fff;
+}
+
+.profile > div {
+  height: 50%;
 }
 
 .profile > div:first-child {
@@ -204,22 +213,25 @@ header > div:nth-child(5){
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  width: 100%;
-  padding: 0 30px;
 
-  position: absolute;
+  width: 100%;
   top: 25px;
+  position: absolute;
 }
 
 .profile .tools div:last-child {
+  margin-right: 40px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
+.profile .tools > button {
+  margin-left: 40px;
+} 
+
 .profile .tools > button, .profile .tools > div button:last-child {
-  height: 36px;
-  width: 36px;
+  height: 40px;
+  width: 40px;
 }
 
 .profile .tools > div button:first-child {
@@ -227,9 +239,8 @@ header > div:nth-child(5){
   align-items: center;
   justify-content: center;
   gap: 10px;
-  
   width: 160px;
-  height: 36px;
+  height: 40px;
 }
 
 .profile .tools > div button:last-child img {
@@ -242,24 +253,24 @@ header > div:nth-child(5){
 }
 
 .profile > div:last-child > div:first-child {
-  padding-left: 30px;
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 
 .profile > div:last-child > div:first-child img{
   width: 200px;
-  position: absolute;
-  top: -40px;
-  
   border-radius: 100%;
   border: 10px solid #fff;
+  bottom: 40px;
+  position: absolute;
 }
 
 .profile > div:last-child > div:last-child{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 25px 30px 30px 0;
+  padding: 20px 40px 20px 0;
 }
 
 .profile > div:last-child > div:last-child > div:first-child {
@@ -280,11 +291,10 @@ header > div:nth-child(5){
 
 .profile > div:last-child > div:last-child button {
   font-weight: bold;
-  padding: 10px 0px;
 }
 
 .profile > div:last-child > div:last-child button:first-child {
-  background: linear-gradient(0deg, rgba(14,103,149,1) 0%, rgba(0,119,181,1) 100%);
+  background-color: #0077B5;
   color: #fff;
   margin-right: 15px;
 }
@@ -310,22 +320,21 @@ header > div:nth-child(5){
 
 .about > div:first-child > div button{
   width: 100%;
-  min-width: 190px;
+  min-width: 60px;
   font-weight: bold;
   border-radius: 0;
 }
 
 .about > div:first-child button:first-child {
-  height: 50px;
+  height: 60px;
+  background-color: #0077B5;
+  color: #fff;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-
-  background: linear-gradient(0deg, rgba(14,103,149,1) 0%, rgba(0,119,181,1) 100%);
-  color: #fff;
 }
 
 .about > div:first-child button:not(button:first-child){
-  height: 40px;
+  height: 50px;
   border-top: 1px solid #E7E7E7;
   border-right: 1px solid #E7E7E7;
 }
@@ -334,11 +343,11 @@ header > div:nth-child(5){
   border-top-right-radius: 4px;
 }
 
-.about > div:last-child{
+ .about > div:last-child{
   display: flex;
   flex-direction: column;
   gap:20px;
-  padding: 60px 30px 35px 30px;
+  padding: 50px 45px 30px 45px;
 
   text-align: left;
   background: linear-gradient(0deg, rgba(255,255,255,1) 60%, rgba(241,244,248,1) 100%);
@@ -349,21 +358,23 @@ header > div:nth-child(5){
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  padding: 30px;
+  gap: 30px;
+  padding: 20px 45px;
+  height: 420px;
   background-color: #fff;
+
 }
 
 .projects > div:first-child {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 30px;
 }
 
 .projects-grid > div img {
@@ -372,7 +383,7 @@ header > div:nth-child(5){
 }
 
 .projects-grid > div h4 {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 /* SECTION SKILLS */
@@ -380,55 +391,61 @@ header > div:nth-child(5){
 .skills {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   max-width: 100%;
-  height: 260px;
-  gap: 20px;
+  gap: 25px;
 
-  padding: 20px 45px;
+  padding: 30px;
   background-color: #fff;
 }
 
 .skills > div{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   width: 100%;
-  gap: 25px;
 }
 
 .skills > div > div {
-  border: 2px solid #F4F4F4;
+  padding: 15px 20px;
+
+  border: 1px solid rgba(244, 244, 244, 1);
   border-radius: 6px;
-  padding: 20px;
 }
 
 .skills > div > div > div {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.skills > div > div img {
+  width: 100px
 }
 
 /* SECTION EXPERIENCE, EDUCATION*/
 
 .experience, .education {
-  padding: 30px 45px;
+  padding: 30px;
   background-color: #fff;
 }
 
 .experience img, .education img {
   width: 54px;
 }
+
 .experience h1, .education h1 {
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .experience-card, .education-card {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   max-width: 100%;
-  gap: 20px;
+  gap: 15px;
   font-size: 14px;
 }
 
@@ -437,7 +454,7 @@ header > div:nth-child(5){
 }
 
 .experience-card h3, .education-card h3 {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .experience-card div:nth-child(2) > div small {
@@ -449,8 +466,8 @@ header > div:nth-child(5){
 .experience-card div:nth-child(3) > small {
   font-size: 14px;
   font-weight: 900;
-  color: #0275B1;
-  padding-left: 15px;
+
+  padding-left: 10px;
 }
 
 .experience-card div:nth-child(2) > div, .education-card div:nth-child(2) > div {
@@ -461,19 +478,21 @@ header > div:nth-child(5){
   padding-top: 20px;
 }
 
-hr {
-  margin: 25px 0 20px 0;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #F4F4F4;
+.experience .experience-card:nth-child(2) {
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 25px;
+}
+
+.experience .experience-card:nth-child(3) {
+  padding-top: 20px;
 }
 
 /* ASIDE */
 
 aside {
   display: grid;
-  grid-template-rows: 400px 500px 400px ;
-  gap: 30px;
+  grid-template-rows: 420px 500px 400px ;
+  gap: 20px;
 }
 
 aside > section, aside {
@@ -490,21 +509,23 @@ aside > section, aside {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 30px 45px;
+  padding: 25px 30px;
 }
 
-.dashboard > div:first-child, .visitors > div:first-child {
+.dashboard > div:first-child, .visitors > div:first-child, .courses > div:first-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   padding-bottom: 20px;
   border-bottom: 1px solid #F4F4F4;
 }
 
 .dashboard > div:last-child {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
   height: 100%;
 }
 
@@ -517,49 +538,45 @@ aside > section, aside {
 .visitors > div:last-child {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
+  height: 100%;
+  gap: 15px;
 }
 
 .visitors > div:last-child > div {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .visitors > div:last-child > div img {
-  width: 60px;
+  width: 52px;
   border-radius: 100%;
 }
 
 /* SECTION COURSES */
 
-.courses > h1 {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #F4F4F4;
-}
-
-.courses > div {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
+.courses > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
 .courses > div > div {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .courses > div > div > div:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
-
   position: relative;
 }
 
 .courses > div > div > div:first-child img:first-child {
-  width: 100px
+  width: 100px;
 }
 
 .courses > div > div > div:first-child img:last-child {
@@ -568,21 +585,22 @@ aside > section, aside {
 
 .courses > div > div h3 {
   word-wrap: normal;
+  margin-bottom: 5px;
 }
 
 /* FOOTER */
 
 footer {
-  width: 215px;
-  background-color: #E7E7E7;
+  background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, rgba(241, 244, 248, 0) 100%);
   width: 100%;
-}
+  border-top: 1px solid #E7E7E7;
+} 
 
 .footer-content {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr 3fr;
   gap: 50px;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .footer-content img:first-child {
@@ -641,6 +659,7 @@ footer {
 }
 
 select {
+  display: flex;
   padding: 9px;
   cursor: pointer;
   border: none;
@@ -649,7 +668,6 @@ select {
   background: #fff url(./assets/chevron-down.png)  no-repeat;
   width: 270px;
   height: 32px;
-  display: flex;
 }
 
 .select {
@@ -743,7 +761,9 @@ select {
   gap: 10px;
 }
 
-.post-image > div:first-child {
+.post-image > div:first-child,
+.brandon > div:first-child,
+.audrey > div:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -752,15 +772,24 @@ select {
   border-bottom: 1px solid #F4F4F4;
 }
 
-.post-image > div:first-child button {
+.audrey {
+  background-color: #fff;
+}
+
+.post-image > div:first-child button, 
+.brandon > div:first-child button,
+.audrey > div:first-child button {
   width: 50px;
 }
 
-.post-image > div:nth-child(2) {
+.post-image > div:nth-child(2),
+.brandon > div:nth-child(2),
+.audrey > div:nth-child(2) {
   padding: 10px 40px;
 }
 
-.post-image > div:nth-child(2) {
+.post-image > div:nth-child(2),
+.brandon > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -770,14 +799,18 @@ select {
   width: 100%;
 }
 
-.post-image > div:nth-child(2) > div {
+.post-image > div:nth-child(2) > div,
+.brandon > div:nth-child(2) > div:nth-child(1),
+.audrey > div:nth-child(2) > div:nth-child(1) {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
 }
 
-.post-image > div:last-child {
+.post-image > div:last-child,
+.brandon > div:last-child,
+.audrey > div:last-child  {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -790,7 +823,9 @@ select {
   height: 100%;
 }
 
-.post-image > div:last-child button {
+.post-image > div:last-child button, 
+.brandon > div:last-child button,
+.audrey > div:last-child button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -801,33 +836,35 @@ select {
   padding: 20px 0;
 }
 
-.post-image > div:last-child > div > button {
+.post-image > div:last-child > div > button,
+.brandon > div:last-child > div > button,
+.audrey > div:last-child > div > button {
   border-right: 1px solid #F4F4F4;
   width: 100px;
+  align-items: center;
 }
 
-.post-image > div:last-child > button {
+.audrey p {
+  margin: 20px 0 20px 0;
+  text-align: justify;
+}
+
+.post-image > div:last-child > button,
+.brandon > div:last-child > button,
+.audrey > div:last-child > button {
   gap: 10px;
   border-left: 1px solid #F4F4F4;
-  width: 120px
+  width: 120px;
 }
 
-
-.list-posts {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* LISTS POSTS DIV THERESA */
-
-.post div:first-child {
+.blue-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 10px 20px;
-  border-bottom: 1px solid #F4F4F4;
+  background-color: #E8F0F8;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: -5px;
 }
 
 .post > div:first-child button {
@@ -858,37 +895,26 @@ select {
 .post > div:last-child {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #F4F4F4;
-  padding: 0 40px;
 }
 
-
-.post > div:first-child > div {
+.blue-card div:first-child div {
   display: flex;
-  height: 100%;
+  flex-direction: column;
+  margin-left: 20px;
 }
 
-.post > div:first-child button {
+.social-actions div:first-child {
   display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 0;
-  gap: 10px;
-  height: 100%;
-  padding: 20px 0;
 }
 
-.post > div:first-child > div > button {
-  border-right: 1px solid #F4F4F4;
-  width: 100px;
+.brandon div:nth-child(4) {
+  margin-bottom: 15px;
 }
 
-.post > div:first-child > button {
-  gap: 10px;
-  border-left: 1px solid #F4F4F4;
-  width: 120px
-}
+
+
+
+
 
 .post > div:nth-child(3) {
   display: flex;
@@ -904,6 +930,7 @@ select {
   display: grid;
   grid-template-rows: 350px 100px auto ;
 }
+
 
 /* SECTION USER */
 
