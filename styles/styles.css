@@ -1006,3 +1006,29 @@ select {
 .groups > div:nth-child(3) {
   padding: 20px 45px;
 }
+
+/* SECTION HASHTAGS */
+.hashtags {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 265px;
+
+  padding: 25px 30px;
+  border-bottom: 1px solid#F4F4F4;
+  border-radius: 4px;
+}
+
+.hashtags-text {
+  display: flex;
+  gap: 10px;
+  max-width: 100%;
+  flex-wrap: wrap;
+
+}
+
+.hashtags-text > div {
+  background-color:#E9F0F8;
+  padding: 7px 12px;
+}
+
