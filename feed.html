@@ -82,36 +82,49 @@
             <h3>NEW POST</h3>
           </div>
           <div>
-            <span>What’s on your mind?</span>
+            <label for="novo-post">Novo post</label>
+            <input name="novo-post" type="text" placeholder="What´s on your mind?">
             <div>
-              <img src="./assets/newPost/vector.png" alt="vector">
-              <img src="./assets/newPost/image.png" alt="image">
-              <img src="./assets/newPost/film.png" alt="film">
-              <img src="./assets/newPost/icon.png" alt="icon">
+              <button>
+                <img src="./assets/newPost/vector.png" alt="Anexar arquivo">
+              </button>
+
+              <button>
+                <img src="./assets/newPost/image.png" alt="Adicionar imagem">
+              </button>
+              
+              <button>
+                <img src="./assets/newPost/film.png" alt="Adicionar video">
+              </button>
+        
+              <button type="submit ">
+                <img src="./assets/newPost/icon.png" alt="Enviar ">
+              </button>
             </div>
           </div>
          </section>
          <div>
           <div>
-            <p>SORT BY: <span class="blue-light-text">TRENDING</span></p>
+            <p>SORT BY: <span class="blue-text">TRENDING</span></p>
           </div>
          </div>
          <section class="list-posts">
-          <div>
+          <section class="post">
             <div>
-              <small><span class="blue-light-text">Ted Bell, Annette Nguyen</span> and <span class="blue-light-text">Cody Hawkins</span> liked this</small>
+              <small><span class="blue-text">Bell, Annette Nguyen </span> and <span class="blue-text">Cody Hawkins</span> liked this</small>
               <button>
-                <img src="./assets/posts/more-horizontal.png" alt="more">
+                <img src="assets/more-horizontal.png" alt="Mais informações">
               </button>
             </div>
+            
             <div>
-              <img src="./assets/posts/photo.png" alt="usuário">
               <div>
-                <h3>Theresa Steward</h3>
-                <small>iOS developer</small>
+                <img src="./assets/posts/photo.png" alt="Foto perfil dono do post">
+                <div>
+                  <h3>Theresa Steward</h3>
+                  <small>iOS developer</small>
+                </div>
               </div>
-            </div>
-            <div>
               <p>What did the Dursleys care if Harry lost his place on the House Quidditch team because he hadn’t practiced all summer? What was it to the Dursleys if Harry went back to school without any of his homework done? The Dursleys were what wizards called Muggles (not a drop of magical blood in their veins).</p>
               <span class="blue-text">READ MORE</span>
             </div>
@@ -131,18 +144,18 @@
                 <span>SHARE</span>
               </button>
             </div>
-          </div>
+          </section>
           
-          <div class="post-image">
+          <section class="post-image">
             <div>
               <small><span class="blue-text">Audrey Alexander</span> comment this</small>
               <button>
-                <img src="assets/more-horizontal.png" alt="more">
+                <img src="assets/more-horizontal.png" alt="Mais informações">
               </button>
             </div>
             <div>
               <div>
-                <img src="assets/post-user.png" alt="usuário">
+                <img src="assets/post-user.png" alt="Foto perfil dono do post">
                 <div>
                   <h3>Kyle Fisher</h3>
                   <small>Product designer at Commandor Corp.</small>
@@ -167,114 +180,108 @@
                 <span>SHARE</span>
               </button>
             </div>
-          </div>
+          </section>
 
-          <div>
-
-            <section class="brandon">
-              <div>
-                <small>High rated post from your feed</small>
-                <button>
-                  <img src="assets/more-horizontal.png" alt="more">
-                </button>
-              </div>
-
-              <div>
-                <div>
-                  <img src="assets/brandon.png" alt="usuário">
-                  <div>
-                  <div>
-                    <h3>Brandon Wilson</h3>
-                    <small>Senior UX designer</small>
-                  </div>
-                </div>
-              </div>
-              <p>There is some new guidelines for iOS</p>
-
-                <div class="blue-card">
-                  <div>
-                      <img src="./assets/doc-icon.png" alt="Document icon">
-                      <div>
-                        <h3>iOS 11 guidelines for UX/UI designers</h3>
-                        <small>PDF file, 324 kb</small>
-                      </div>
-                  </div>
-                    <img src="./assets/cloud.png">
-                </div>
-                <div class="blue-card">
-                  <div>
-                      <img src="./assets/doc-icon.png" alt="Document icon">
-                      <div>
-                        <h3>iOS 11 guidelines for developers</h3>
-                        <small>PDF file, 245 kb</small>
-                      </div>
-                  </div>
-                    <img src="./assets/cloud.png">
-                </div>
-
-              </div>
-
-              <div class="social-actions">
-                <div>
-                  <button>
-                    <img src="assets/post-like.png" alt="botão curtir">
-                    <span>89</span>
-                  </button>
-                  <button>  
-                    <img src="assets/post-chat.png" alt="botão chat">
-                    <span>7</span>
-                  </button>
-                </div>
-                <button>
-                  <img src="assets/post-share.png" alt="botão compartilhar">
-                  <span>SHARE</span>
-                </button>
-              </div>
-            </section>
-          </div>
-
-
-            </section>
-            <section class="audrey">
-              <div>
-                <small>First post from Audrey Alexander</small>
-                <button>
-                  <img src="assets/more-horizontal.png" alt="more">
-                </button>
-              </div>
-
-              <div>
-                <div>
-                  <img src="assets/audrey.png" alt="usuário">
-                  <div>
-                  <div>
-                    <h3>Audrey Alexander</h3>
-                    <small>Team lead at Google</small>
-                  </div>
-                </div>
-              </div>
-              <p>The bun runs along the road and meets a wolf. «Little bun, little bun, I want to eat you!» says the wolf. «I ran away from Grandfather, I ran away from Grandmother, I ran away from the hare. And I can run away from you, grey wolf!» says the bun and runs away.</p>
+          <section class="brandon">
+            <div>
+              <small>High rated post from your feed</small>
+              <button>
+                <img src="assets/more-horizontal.png" alt="Mais informações">
+              </button>
             </div>
 
-              <div class="social-actions">
+            <div>
+              <div>
+                <img src="assets/brandon.png" alt="Foto perfil dono do post">
                 <div>
-                  <button>
-                    <img src="assets/post-like.png" alt="botão curtir">
-                    <span>10</span>
-                  </button>
-                  <button>  
-                    <img src="assets/post-chat.png" alt="botão chat">
-                    <span>0</span>
-                  </button>
+                <div>
+                  <h3>Brandon Wilson</h3>
+                  <small>Senior UX designer</small>
                 </div>
+              </div>
+              </div>
+              <p>There is some new guidelines for iOS</p>
+              <div class="blue-card">
+                <div>
+                    <img src="./assets/doc-icon.png" alt="Document icon">
+                    <div>
+                      <h3>iOS 11 guidelines for UX/UI designers</h3>
+                      <small>PDF file, 324 kb</small>
+                    </div>
+                </div>
+                  <img src="./assets/cloud.png">
+              </div>
+              <div class="blue-card">
+                <div>
+                    <img src="./assets/doc-icon.png" alt="Document icon">
+                    <div>
+                      <h3>iOS 11 guidelines for developers</h3>
+                      <small>PDF file, 245 kb</small>
+                    </div>
+                </div>
+                <img src="./assets/cloud.png" alt="upar para nuvem">
+              </div>
+            
+            </div>
+
+            <div class="social-actions">
+              <div>
                 <button>
-                  <img src="assets/post-share.png" alt="botão compartilhar">
-                  <span>SHARE</span>
+                  <img src="assets/post-like.png" alt="botão curtir">
+                  <span>89</span>
+                </button>
+                <button>  
+                  <img src="assets/post-chat.png" alt="botão chat">
+                  <span>7</span>
                 </button>
               </div>
-            </section>
-         </section>
+              <button>
+                <img src="assets/post-share.png" alt="botão compartilhar">
+                <span>SHARE</span>
+              </button>
+            </div>
+          </section>
+    
+          <section class="audrey">
+            <div>
+              <small>First post from <span class="blue-text">Audrey Alexander</span></small>
+              <button>
+                <img src="assets/more-horizontal.png" alt="Mais informações">
+              </button>
+            </div>
 
+            <div>
+              <div>
+                <img src="assets/audrey.png" alt="usuário">
+                <div>
+                <div>
+                  <h3>Audrey Alexander</h3>
+                  <small>Team lead at Google</small>
+                </div>
+              </div>
+            </div>
+            <p>The bun runs along the road and meets a wolf. «Little bun, little bun, I want to eat you!» says the wolf. «I ran away from Grandfather, I ran away from Grandmother, I ran away from the hare. And I can run away from you, grey wolf!» says the bun and runs away.</p>
+          </div>
+
+            <div class="social-actions">
+              <div>
+                <button>
+                  <img src="assets/post-like.png" alt="botão curtir">
+                  <span>10</span>
+                </button>
+                <button>  
+                  <img src="assets/post-chat.png" alt="botão chat">
+                  <span>0</span>
+                </button>
+              </div>
+              <button>
+                <img src="assets/post-share.png" alt="botão compartilhar">
+                <span>SHARE</span>
+              </button>
+            </div>
+          </section>
+         </section>
+      </section>
       <aside class="feed-right">
         <section class="user">
           <div>
@@ -319,16 +326,59 @@
 
         </section>
         <section class="hashtags">
+          <div>
+            <h4>FOLLOWED HASHTAGS</h4>
+          </div>
+          <div class="hashtags-text">
+            <div>#work</div>
+            <div>#business</div>
+            <div>#hr</div>
+            <div>#userinterface</div>
+            <div>#digital</div>
+            <div>#userexperience</div>
+            <div>#ux</div>
+            <div>#ui</div>
+            <div>#freelance</div>
+          </div>
 
         </section>
         <section class="trending-articles">
-          
+          <div>
+            <h4>TRENDING ARTICLES</h4>
+          </div>
+          <div>
+            <div>
+              <div>
+                <img src="assets/trending-articles-one.png" alt="Principais artigos">
+              </div>
+              <div>
+                <h3>How I make cool designs?</h3>
+                <small>6,340 viewers</small>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="assets/trending-articles-two.png" alt="Principais artigos">
+              </div>
+              <div>
+                <h3>Advices for young HR-manage</h3>
+                <small>8,123 viewers</small>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="assets/trending-articles-three.png" alt="Principais artigos">
+              </div>
+              <div>
+                <h3>A little about usability testing</h3>
+                <small>3,912 viewers</small>
+              </div>
+            </div>
+          </div>
         </section>
       </aside>
     </div>
   </section>
-
-
   <footer>
     <div class="container footer-content">
       <div>
@@ -392,4 +442,4 @@
       </div>
   </footer>
 </body>
-</html>      
+</html>
