@@ -774,6 +774,14 @@ select {
 
 .feed > div p {
   cursor: pointer;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin-left: 20px;
+}
+
+.feed > div img {
+  width: 14px;
+  margin: 0 20px 0 5px;
 }
 
 .feed > div p:hover {
@@ -783,16 +791,10 @@ select {
 
 .feed > div > div {
   width: 100%;
-  gap: 20px;
 }
 
-.feed > div > div span::after {
-  content: "";
-  display: inline-block;
-  margin-left: 10px;
-  height: 10px;
-  width: 15px;
-  background: url("../assets/chevron-down.png");
+.feed > div > div span {
+  display: inline;
 }
 
 .feed > div > div::before, .feed > div > div::after {
@@ -1095,4 +1097,3 @@ select {
   word-wrap: normal;
   margin-bottom: 5px;
 }
-
